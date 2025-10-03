@@ -4,15 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvPasosHoy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Pasos Hoy: 0"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="18sp"/>
 
+    <TextView
+        android:id="@+id/tvPasosTotales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasos Totales: 0"
+        app:layout_constraintTop_toBottomOf="@id/tvPasosHoy"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvOxigeno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oxígeno: 0%"
+        app:layout_constraintTop_toBottomOf="@id/tvPasosTotales"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvPulso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pulso: 0"
+        app:layout_constraintTop_toBottomOf="@id/tvOxigeno"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvRitmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ritmo: 0"
+        app:layout_constraintTop_toBottomOf="@id/tvPulso"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refrescar"
+        app:layout_constraintTop_toBottomOf="@id/tvRitmo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
