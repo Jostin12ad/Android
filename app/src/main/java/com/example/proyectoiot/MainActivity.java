@@ -1,4 +1,4 @@
-package com.example.proyectoiot;
+package com.example.proyectoiot.activities;
 
 import android.os.Bundle;
 import android.widget.TextView;
